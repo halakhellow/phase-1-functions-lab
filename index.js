@@ -5,3 +5,8 @@ function distanceFromHqInBlocks(passengerLocation){
 function distanceFromHqInFeet(passengerLocation){
     return distanceFromHqInBlocks(passengerLocation)*264
 }
+
+function distanceTravelledInFeet(start,destination){
+    let distance = (destination-start)*264
+    return distance<0 ? -distance : distance
+}
